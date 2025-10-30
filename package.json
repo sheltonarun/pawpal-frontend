@@ -1,4 +1,5 @@
 {
+<<<<<<< HEAD
   "name": "pawpal-client",
   "version": "1.0.0",
   "private": true,
@@ -27,3 +28,27 @@
     ]
   }
 }
+=======
+  "name": "pawpal-server",
+  "version": "1.0.0",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "nodemon server.js",
+    "seed": "node seed.js"
+  },
+  "dependencies": {
+    "axios": "^1.6.0",
+    "bcryptjs": "^2.4.3",
+    "cors": "^2.8.5",
+    "dotenv": "^16.0.0",
+    "express": "^4.18.2",
+    "express-validator": "^6.15.0",
+    "jsonwebtoken": "^9.0.0",
+    "mongoose": "^7.0.0"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.0"
+  }
+}
+>>>>>>> 498439d44ffa967172a118495d1462cb0ab892c2

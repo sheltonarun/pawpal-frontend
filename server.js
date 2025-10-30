@@ -2,7 +2,6 @@ require('dotenv').config();
 const express = require('express');
 const mongoose = require('mongoose');
 const cors = require('cors');
-const path = require('path');
 
 const app = express();
 app.use(cors());
@@ -17,10 +16,9 @@ app.use('/api/auth', authRoutes);
 app.use('/api/pets', petRoutes);
 app.use('/api/users', userRoutes);
 
-// Serve frontend build (for Render deployment)
-app.use(express.static(path.join(__dirname, '../client/build')));
-app.get('*', (req, res) => {
-  res.sendFile(path.join(__dirname, '../client/build', 'index.html'));
+// Simple test route (backend-only)
+app.get('/', (req, res) => {
+  res.send('Pawpal backend is running!');
 });
 
 const PORT = process.env.PORT || 5000;

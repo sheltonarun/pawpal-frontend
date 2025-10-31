@@ -1,4 +1,9 @@
 {
+  "engines": {
+  "node": "18.x",
+  "npm": "9.x"
+  },
+
   "name": "pawpal-client",
   "version": "1.0.0",
   "private": true,
